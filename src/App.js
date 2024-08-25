@@ -25,7 +25,6 @@ function App() {
   const handleSubmit = async () => {
     try {
         setErrorMessage('');
-        // Parse JSON to ensure it's valid
         const parsedInput = JSON.parse(jsonInput);
         
         // Make API call
