@@ -26,8 +26,6 @@ function App() {
     try {
         setErrorMessage('');
         const parsedInput = JSON.parse(jsonInput);
-        
-        // Make API call
         const response = await axios.post('https://bajajbackend-q6bk.onrender.com/bfhl', parsedInput);
         setResponseData(response.data);
     } catch (error) {
